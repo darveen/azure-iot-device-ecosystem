@@ -1,34 +1,27 @@
 ---
-platform: {enter the OS name running on device}
-device: {enter your device name here}
+platform: windows 10 Enterprise
+device: VT-858
 language: c
 ---
 
-Run a simple C sample on {enter your device name here} device running {enter the OS name running on device}
+Run a simple C sample on windows 10 Enterprise device running VT-858
 ===
 ---
 
 # Table of Contents
 
--   [Introduction](#Introduction)
--   [Step 1: Prerequisites](#Prerequisites)
--   [Step 2: Prepare your Device](#PrepareDevice)
--   [Step 3: Build and Run the Sample](#Build)
+-   [Introduction]
+-   [Step 1: Prerequisites]
+-   [Step 2: Prepare your Device]
+-   [Step 3: Build and Run the Sample]
 -   [Next Steps](#NextSteps)
-
-# Instructions for using this template
-
--   Replace the text in {placeholders} with correct values.
--   Delete the lines {{enclosed}} after following the instructions enclosed between them.
--   It is advisable to use external links, wherever possible.
--   Remove this section from final document.
 
 <a name="Introduction"/>
 # Introduction
 
 **About this document**
 
-This document describes how to connect {enter your device name here} device running {enter the OS name running on device} with Azure IoT SDK. This multi-step process includes:
+This document describes how to connect windows 10 Enterprise device running VT-858 with Azure IoT SDK. This multi-step process includes:
 -   Configuring Azure IoT Hub
 -   Registering your IoT device
 -   Build and deploy Azure IoT SDK on device
@@ -38,23 +31,24 @@ This document describes how to connect {enter your device name here} device runn
 
 You should have the following items ready before beginning the process:
 
--   [Prepare your development environment][setup-devbox-windows]
--   [Setup your IoT hub][lnk-setup-iot-hub]
--   [Provision your device and get its credentials][lnk-manage-iot-hub]
--   {enter your device name here} device.
--   {{Please specify if any other software(s) or hardware(s) are required.}}
+-   [Prepare your development environment]
+-   [Setup your IoT hub]
+-   [Provision your device and get its credentials]
+-   VT-858 device.
+
 
 <a name="PrepareDevice"></a>
 # Step 2: Prepare your Device
 
--   {{Write down the instructions required to setup, configure and connect your device. Please use external links when possible pointing to your own page with device preparation steps.}}
+-   Install the OS(windows 10 Enterprise)
+-   Make sure connected WIFI or 4G/LTE network
 
 <a name="Build"></a>
 # Step 3: Build SDK and Run the sample
 
--   Start a new instance of Visual Studio 2015. Open the **azure_iot_sdks.sln** solution in the **cmake** folder in your home directory.
+-   Start a new instance of Visual Studio 2015. Open the iothub_client_sample_http.sln solution in the D:\azure-iot-sdk-c\iothub_client\samples\iothub_client_sample_http\windows folder in your home directory.
 
--   In Visual Studio, in **Solution Explorer**, navigate to **simplesample_amqp** project, open the **simplesample_amqp.c** file.
+-   In Visual Studio, in Solution Explorer, navigate to iothub_client_sample_http project, open the iothub_client_sample_htt.c file.
 
 -   Locate the following code in the file:
 
@@ -64,7 +58,7 @@ You should have the following items ready before beginning the process:
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to observe the messages IoT Hub receives from the application.
 
--   In **Solution Explorer**, right-click the **simplesample_amqp** project, click **Debug**, and then click **Start new instance** to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
+-   In Solution Explorer, right-click the iothub_client_sample_http project, click Debug, and then click Start new instance to build and run the sample. The console displays messages as the application sends device-to-cloud messages to IoT Hub.
 
 -   See [Manage IoT Hub][lnk-manage-iot-hub] to learn how to send cloud-to-device messages to the application.
 
